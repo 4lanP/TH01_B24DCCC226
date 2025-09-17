@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoList from './TodoList' ;
+import ColorBox from './ColorBox';
+import ShoppingCart from './ShoppingCart';
+import Post from './Post';
+import QuizApp from './QuizApp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <b>Bài 1: To-do List:</b>
+      </div>
+      <TodoList />
+      <br />
+      <div>
+        <b>Bài 2: Color Picker</b>  
+      </div>
+      <ColorBox />
+      <br />
+      <div>
+        <b>Bài 3: Giỏ hàng</b>
+      </div>
+      <ShoppingCart />
+      <br />
+      <div>
+        <b>Bài 4:  Like/Dislike Post</b>
+      </div>
+      <Post />
+      <br />
+      <div>
+        <b>Bài 5: Quiz App</b>
+      </div>
+      <QuizApp />
     </div>
   );
 }
